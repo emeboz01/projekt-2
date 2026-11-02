@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo a{
+    font-family: "Faster One", system-ui;
+    font-size: 60px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+/* header */
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+.search{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+}
+
+.search input{
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.search button{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* tilbage knap */
+.goback button{
+    background-color: white;
+    border: none;
+    margin: 1.5rem;
+}
+
+.goback button:hover{
+    cursor: pointer;
+}
+
+/* navigation */
+.navigation{
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* ^ unødvendig?? */
+    padding: 1.5rem 1rem;
+    background-color: black;
+    justify-content: space-evenly;
+    
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+/* main */
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.hero-image img{
+    width: 620px;
+    height: 100%;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 10%;
+    padding: 2rem;
+    
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    margin-bottom: 20px;
+    line-height: 3.5rem;
+    font-size: 50px;
+}
+
+.hero-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto auto);
+    box-sizing: content-box;
+    list-style: none;
+    margin-top: 5%;
+    gap: 35px;
+}
+
+.hero-links a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero-links a:hover{
+        transform: scale(1.08);
+    }
+
+.kasse1{
+    background-color: #E8ED3D;
+}
+
+.kasse2{
+    background-color: #64C8FB;
+}
+
+.kasse3{
+    background-color: #7096FF;
+}
+
+.kasse4{
+    background-color: #FDBDE0;
+}
+
+/* nyhedsbrev */
+.newsletter{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: 3rem 4rem;
+    align-items:center;
+    background-color: #ADD075;
+}
+
+.newsletter-text{
+    margin-bottom: 1rem;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+}
+
+.newsletter-form input{
+    padding: 1rem;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+}
+
+.newsletter button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin: 5px;
+    cursor: pointer;
+    width: 90px;
+}
+
+/* om os side */
+.about{
+    text-align: center;
+    padding: 1.5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* kontaktformular */
+
+.kontaktformular{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.contact-text{
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 450px;;
+}
+
+.navnefelt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.contact-form textarea{
+    height: 160px;
+    resize: none;
+}
+
+.contact-form button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    width: 90px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 2rem 3.5rem;
+}
+
+.footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+    line-height: 1.5rem;
+}
+
+/* media queries halløj */
+@media (max-width: 768px){
+    header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    .search-bar{
+        max-width: 100%;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .newsletter{
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem;
+        gap: 1rem;
+    }
+}
