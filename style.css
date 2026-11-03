@@ -215,10 +215,10 @@ h2{
 
 /* om os side */
 .about{
-    text-align: center;
+    text-align: left;
     padding: 1.5rem;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 /* kontaktformular */
