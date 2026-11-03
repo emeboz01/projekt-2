@@ -302,7 +302,15 @@ footer a{
 
     .hero{
         grid-template-columns: 1fr;
-        min-height: auto;
+    }
+
+    .hero img{
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .hero-content{
+        padding: 2rem 1.5rem;
     }
 
     .newsletter{
