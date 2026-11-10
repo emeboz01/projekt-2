@@ -226,7 +226,6 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
     gap: 5%;
-    max-width: 100%;
     }
 
 .videnoplys{
