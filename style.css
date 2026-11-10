@@ -381,10 +381,6 @@ footer a{
         gap: 2rem;
     }
 
-    .videnoplys{
-
-    }
-
     .newsletter{
         grid-template-columns: 1fr;
         padding: 2rem 1.5rem;
