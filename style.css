@@ -66,13 +66,16 @@ p{
 }
 
 /* tilbage knap */
-.goback button{
+.goback a{
     background-color: white;
     border: none;
     margin: 1.5rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
 }
 
-.goback button:hover{
+.goback a:hover{
     cursor: pointer;
 }
 
@@ -213,12 +216,69 @@ h2{
     width: 90px;
 }
 
-/* om os side */
-.about{
-    text-align: left;
-    padding: 1.5rem;
-    margin-left: 25%;
-    margin-right: 25%;
+/* viden og værketøjer */
+
+.viden{
+    padding: 2rem;
+}
+.videnemner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 5%;
+    max-width: 100%;
+    }
+
+.videnoplys{
+    padding: 2rem; 
+}
+
+.p1{
+    background-color: #64C8FB;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.p2{
+    background-color: #FDBDE0;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.p3{
+    background-color: #E8ED3D;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.p4{
+    background-color: #9370DB;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.p5{
+    background-color: #FB5C43;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.p6{
+    background-color: #64C8FB;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /* kontaktformular */
@@ -289,7 +349,7 @@ footer a{
 }
 
 /* media queries halløj */
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     header{
         grid-template-columns: 1fr;
         justify-items: center;
@@ -304,6 +364,10 @@ footer a{
         grid-template-columns: 1fr;
     }
 
+    .hero-links{
+        grid-template-columns: 1fr;
+    }
+
     .hero img{
         min-height: 200px;
         width: 100%;
@@ -311,6 +375,15 @@ footer a{
 
     .hero-content{
         padding: 2rem 1.5rem;
+    }
+
+    .videnemner{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .videnoplys{
+
     }
 
     .newsletter{
