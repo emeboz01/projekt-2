@@ -373,7 +373,7 @@ footer a{
     }
 
     .hero-content{
-        padding: 2rem 1.5rem;
+        padding: 2rem;
     }
 
     .videnemner{
@@ -383,12 +383,12 @@ footer a{
 
     .newsletter{
         grid-template-columns: 1fr;
-        padding: 2rem 1.5rem;
+        padding: 2rem;
     }
 
     footer{
         grid-template-columns: 1fr;
-        padding: 2rem 1.5rem;
+        padding: 2rem;
         gap: 1rem;
     }
 }
