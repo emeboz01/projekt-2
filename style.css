@@ -26,6 +26,10 @@ p{
     line-height: 1.5rem;
 }
 
+li{
+    line-height: 25px;
+}
+
 /* header */
 .header{
     display: grid;
@@ -225,7 +229,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
-    gap: 5%;
+    gap: 4%;
     }
 
 .videnoplys{
@@ -233,15 +237,19 @@ h2{
 }
 
 .p1{
-    background-color: #64C8FB;
+    background-color: black;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
     box-sizing: border-box;
 }
 
+.p1 *{
+    color: white;
+}
+
 .p2{
-    background-color: #FDBDE0;
+    background-color: #ADD075;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
@@ -249,7 +257,7 @@ h2{
 }
 
 .p3{
-    background-color: #E8ED3D;
+    background-color: #F8C435;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
@@ -257,7 +265,7 @@ h2{
 }
 
 .p4{
-    background-color: #9370DB;
+    background-color: #F8C435;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
@@ -265,7 +273,7 @@ h2{
 }
 
 .p5{
-    background-color: #FB5C43;
+    background-color: #ADD075;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
@@ -273,11 +281,15 @@ h2{
 }
 
 .p6{
-    background-color: #64C8FB;
+    background-color: black;
     padding: 25px;
     border-radius: 15px;
     height: 100%;
     box-sizing: border-box;
+}
+
+.p6 *{
+    color: white;
 }
 
 /* kontaktformular */
