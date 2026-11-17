@@ -214,12 +214,12 @@ h2{
 /* viden og værketøjer */
 
 .viden{
-    padding: 2rem;
+    padding: 2rem 2rem 0;
 }
 .videnemner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
+    padding: 2rem 2rem 0;
     gap: 2rem;
     }
 
@@ -228,78 +228,68 @@ h2{
 }
 
 .p1{
-    background-color: black;
     padding: 25px;
-    border-radius: 15px;
     height: 100%;
     box-sizing: border-box;
 }
 
-.p1 *{
-    color: white;
-}
 
 .p2{
-    background-color: #ADD075;
+    background-color: #A8DADC;
     padding: 25px;
     border-radius: 15px;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .p3{
-    background-color: #F8C435;
+    background-color: #BDB2FF;
     padding: 25px;
     border-radius: 15px;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .p4{
-    background-color: #F8C435;
+    background-color: #C58AE0;
     padding: 25px;
     border-radius: 15px;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .p5{
-    background-color: #ADD075;
+    background-color: #E8ED3D;
     padding: 25px;
     border-radius: 15px;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .p6{
-    background-color: black;
+    background-color: #95D3F9;
     padding: 25px;
     border-radius: 15px;
-    height: 100%;
-    box-sizing: border-box;
 }
 
-.p6 *{
-    color: white;
+.p2 h2, .p3 h2, .p4 h2, .p5 h2, .p6 h2{
+    font-size: 35px;
 }
-
 /* kontaktformular */
 
 .kontaktformular{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: min(100% - 2rem, 450px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    width: min(100% - 2rem, 1000px);
     margin-inline: auto;
+    padding-block: 2rem;
 }
 
 .contact-text{
     margin-bottom: 15px;
 }
 
+.contact-text h2{
+    margin-top: 0;
+}
+
 .contact-form{
     width: 100%;
-    max-width: 450px;
+    padding-top: 12px;
 }
 
 .navnefelt{
@@ -377,6 +367,16 @@ footer a{
 
     .hero-content{
         padding: 2rem;
+    }
+
+    .kontaktformular{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .navnefelt{
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .videnemner{
