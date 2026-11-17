@@ -148,8 +148,8 @@ h2{
 }
 
 .hero-links a:hover{
-        transform: scale(1.08);
-    }
+    transform: scale(1.08);
+}
 
 .kasse1{
     background-color: #E8ED3D;
